@@ -1,7 +1,7 @@
 /subscriptions/50aebaaf-24b1-4646-8979-fde629ac0010/resourceGroups/VMRESGRP 
 /subscriptions/50aebaaf-24b1-4646-8979-fde629ac0010b
 
-
+test
 
 /subscriptions/50aebaaf-24b1-4646-8979-fde629ac0010/resourceGroups/VNRESGRP/providers/Microsoft.Compute/virtualMachines/RTSVM1 resource id
 7a3a9cdf-b3f1-4731-97c4-e2c147bd07ca deployment correlation id	
