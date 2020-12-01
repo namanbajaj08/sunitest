@@ -1,0 +1,181 @@
+
+
+Commands ------------------------------------------------
+git init
+git pull / clone   //Pulling data from github
+git status   // check the status the unstagged file
+git add .   // Stagging the all files
+git commit -m "Description"   // Committing the file to Locally
+
+git push   // Pushing file to Github repo.
+  
+
+git clone https://github.com/namanbajaj08/sunitest.git
+
+-----------------------------------------------------------------
+
+
+admin@Naman MINGW64 ~/Desktop/test
+$ git init
+Initialized empty Git repository in C:/Users/admin/Desktop/test/.git/
+
+admin@Naman MINGW64 ~/Desktop/test (master)
+$ git clone https://github.com/namanbajaj08/sunitest.git
+Cloning into 'sunitest'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+admin@Naman MINGW64 ~/Desktop/test (master)
+$ cd sunitest/
+
+admin@Naman MINGW64 ~/Desktop/test/sunitest (main)
+$ ls
+README.md
+
+admin@Naman MINGW64 ~/Desktop/test/sunitest (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        naman.txt
+        sunil.txt
+        tst.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+admin@Naman MINGW64 ~/Desktop/test/sunitest (main)
+$ git add naman.txt
+
+admin@Naman MINGW64 ~/Desktop/test/sunitest (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   naman.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        sunil.txt
+        tst.txt
+
+
+admin@Naman MINGW64 ~/Desktop/test/sunitest (main)
+$ git add .
+
+admin@Naman MINGW64 ~/Desktop/test/sunitest (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   naman.txt
+        new file:   sunil.txt
+        new file:   tst.txt
+
+
+admin@Naman MINGW64 ~/Desktop/test/sunitest (main)
+$ git commit -m "Test file Upload" .
+[main b60154e] Test file Upload
+ 3 files changed, 3 insertions(+)
+ create mode 100644 naman.txt
+ create mode 100644 sunil.txt
+ create mode 100644 tst.txt
+
+admin@Naman MINGW64 ~/Desktop/test/sunitest (main)
+$ git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (5/5), 371 bytes | 123.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/namanbajaj08/sunitest.git
+   646f0c7..b60154e  main -> main
+
+admin@Naman MINGW64 ~/Desktop/test/sunitest (main)
+$
+
+admin@Naman MINGW64 ~/Desktop/test/sunitest (main)
+$
+
+admin@Naman MINGW64 ~/Desktop/test/sunitest (main)
+$ git pull
+
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/namanbajaj08/sunitest
+   b60154e..ebe2f64  main       -> origin/main
+Updating b60154e..ebe2f64
+Fast-forward
+ naman.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+admin@Naman MINGW64 ~/Desktop/test/sunitest (main)
+$
+
+admin@Naman MINGW64 ~/Desktop/test/sunitest (main)
+$ git diff
+diff --git a/naman.txt b/naman.txt
+index c4d938e..2a53714 100644
+--- a/naman.txt
++++ b/naman.txt
+@@ -1 +1,2 @@
+ fdnjrfn dnknkfnc kes
++fekke
+\ No newline at end of file
+
+admin@Naman MINGW64 ~/Desktop/test/sunitest (main)
+$ git add .
+
+admin@Naman MINGW64 ~/Desktop/test/sunitest (main)
+$ git commit -m
+error: switch `m' requires a value
+
+admin@Naman MINGW64 ~/Desktop/test/sunitest (main)
+$ git commit -m "yes"
+[main ee03105] yes
+ 2 files changed, 9 insertions(+)
+ create mode 100644 vm machine.txt
+
+admin@Naman MINGW64 ~/Desktop/test/sunitest (main)
+$ git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 550 bytes | 550.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/namanbajaj08/sunitest.git
+   ebe2f64..ee03105  main -> main
+
+admin@Naman MINGW64 ~/Desktop/test/sunitest (main)
+$ git diff
+
+admin@Naman MINGW64 ~/Desktop/test/sunitest (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/namanbajaj08/sunitest
+   ee03105..84bf2ef  main       -> origin/main
+Updating ee03105..84bf2ef
+Fast-forward
+ vm machine.txt | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
